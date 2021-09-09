@@ -174,11 +174,7 @@ if uploaded_file is not None:
         st.dataframe(data)
 
 
-	# Dataframe Info part
-	if len(data)>2000:
-		st.dataframe(data[0:2000])  
-	else:
-		st.dataframe(data)
+
 
 
 
