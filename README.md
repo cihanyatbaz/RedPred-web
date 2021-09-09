@@ -21,9 +21,12 @@ RedPred: Redox Energy Prediction Tool for Redox Flow Battery Molecules
 
 
 ------------------------------------------
+
 ## RedPred Web App
 
 * Link for the web app: https://share.streamlit.io/mcsorkun/redpred-web/main/app.py
+
+* 2 (my_account) : https://share.streamlit.io/cihanyatbaz/redpred-web/main/app.py  
 
 ![](redpred_app.gif)
 
