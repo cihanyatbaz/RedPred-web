@@ -303,8 +303,20 @@ df_results=df_results.round(6)
 
 # df_results.to_csv("results/predicted-"+test_data_name+".csv",index=False)
 
+
+# Dataframe part
+
 st.header('Predicted Reaction Energy (Hartree) ')
 df_results # Skips the dummy first item
+
+# Use only top 300
+if len(df_results)>2000:
+	df_results[0:2000]
+else:
+	df_results
+
+
+
 
 # download=st.button('Download Results File')
 # if download:
