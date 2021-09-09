@@ -10,6 +10,13 @@ Created on Sun Oct 18 14:54:37 2020
 # Import libraries
 ######################
 
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
+
+import warnings
+warnings.filterwarnings("ignore")
+
+
 
 from PIL import Image
 import base64
