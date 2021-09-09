@@ -175,7 +175,7 @@ if uploaded_file is not None:
 
 
 	# Dataframe Info part
-	if len(SMILES)>2000:
+	if len(data)>2000:
 		st.dataframe(data[0:2000])  
 	else:
 		st.dataframe(data)
