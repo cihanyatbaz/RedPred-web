@@ -171,7 +171,7 @@ if uploaded_file is not None:
     data_expander = st.beta_expander("Explore the Dataset", expanded=False)
     with data_expander:
 		
-        st.dataframe(data)
+        st.dataframe(data[0:2000])
 
 
 
