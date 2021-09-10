@@ -155,7 +155,7 @@ SMILES = list(filter(None, SMILES))
 
 
 st.sidebar.write("""---------**OR**---------""")
-st.sidebar.write("""**Upload a file with a column named 'reactant_smiles'** (Max:2000)""")
+st.sidebar.write("""**Upload a file with a column named 'reactant_smiles'** (Max:1000)""")
 
 
 
@@ -171,7 +171,7 @@ if uploaded_file is not None:
     data_expander = st.beta_expander("Explore the Dataset", expanded=False)
     with data_expander:
 		
-        st.dataframe(data[0:2000])
+        st.dataframe(data[0:1000])
 
 
 
@@ -181,9 +181,9 @@ if uploaded_file is not None:
 # st.header('Input SMILES')
 # SMILES[1:] # Skips the dummy first item
 
-# Use only top 300
-if len(SMILES)>2000:
-    SMILES=SMILES[0:2000]
+# Use only top 1000
+if len(SMILES)>1000:
+    SMILES=SMILES[0:1000]
 	
 ## Calculate molecular descriptors
 ecfc_encoder = get_ecfc(SMILES)
